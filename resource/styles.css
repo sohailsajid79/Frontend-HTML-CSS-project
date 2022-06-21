@@ -1,0 +1,446 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%; 
+    height: 100%;
+    font-family: 'Nunito', sans-serif;   
+}
+
+body p {
+    font-size: 25px;
+    padding-top: 30px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #808080;
+    font-weight: 900;
+}
+
+/*header and section 0 start*/
+/*setting header style to be fixed*/
+
+:root {
+    --main: rgb(6, 138, 219);
+    --main1: purple;
+}
+
+header {
+    position: fixed;
+    height: 105px;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+    display: inline-flex;
+    background-color: purple;
+}
+
+/*setting image inside of the header*/
+.logo {
+    height: 80px;
+    float: left;
+}
+
+/*setting navbar inside of header*/
+nav {
+    float: right;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header nav a {
+    display: inline-block;
+    margin-top: 20px;
+    border: 0px;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    transition-duration: 0.5s;
+    background-color: rgb(6, 138, 219);
+    border-radius: 15px;
+}
+
+nav .fb {
+    display: inline-block;
+    width: 30px;
+}
+
+nav .fb:hover {
+    transition-duration: 0.5s;
+    background-color: rgb(6, 138, 219);
+    border-radius: 15px;
+}
+
+main {
+    margin: 0;
+    padding-top: 95px;
+}
+
+
+/*setting video and image content side by side start*/
+.holding-container {
+    width: 100%;
+    display: inline-flex;
+    height: auto;
+}
+
+.left-side, .right-side {
+    width: 50%;
+}
+
+/*image placed on the left*/
+.holding-container .left-side video {
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+    pointer-events: none;
+}
+
+/*image placed on the right*/
+.holding-container .right-side {
+    position: relative;
+    background-image: url("./assets/AdobeStock_271159577.jpeg");
+    background-size: cover;
+}
+
+/*setting faq and 'get an offer' in front of right-side image*/
+.options {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    overflow: hidden;
+    display: inline-flex;
+    width: 450px;
+}
+
+.FAQs, .GAO {
+    padding: 10px 10px;
+    display: block;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+} 
+
+.FAQs {
+    background-color: var(--main);
+    width: 70%;
+}
+
+.GAO {
+    background-color: var(--main1);
+    position: relative;
+    width: 60%;
+}
+
+.GAO::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    display: block;
+    background-color: var(--main1);
+    top: 0;
+    left: -30px;
+    transform: rotate(45deg);
+}
+/*setting video and image content side by side end*/
+/*header and section 0 end*/
+
+
+
+/*section 1 About Us start*/
+/*setting color for the svg images to blue*/
+p img {
+    filter: invert(48%) sepia(32%) saturate(6710%) hue-rotate(178deg) brightness(91%) contrast(95%);
+    line-height: 1.7em;
+    font-weight: 500;
+} 
+
+p span {
+    margin-left: 30px;
+}
+
+.sypf-container {
+    display: flex
+} 
+
+.sypf-container div {
+    border: 1px #ccc solid;
+    padding: 10px;
+    margin: 25px;
+}
+
+.sypf-box {
+    flex: 1;
+}
+/*section 1 About Us end*/
+
+
+
+/*section 2 How We Compare start*/
+.center-p {
+    text-align: center;
+}
+
+.hwc-container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+    justify-content: center;
+}
+
+.hwc-container table {
+    width: 100%;
+    text-align: center;
+}
+
+.th-img {
+    margin: 20px 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.th-img img {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    font-size: xx-large;
+}
+
+td {
+    color: purple;
+    font-weight: 900;
+    align-items: center;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.hwc-hover tr:hover td {
+    color: white;
+}
+
+.hwc-hover tr:hover {
+    background-color: rgb(6, 138, 219);
+    border-radius: 3px;
+}
+
+.center-table {
+    text-align: center;
+    color: grey;
+}
+
+/*section 2 How We Compare end*//*section 2 How We Compare start*//*section 2 How We Compare start*/
+
+
+
+/*section 3 FAQs start*/
+.faq-container {
+    display: flex
+} 
+
+.faq-container div {
+    border: 1px #ccc solid;
+    padding: 10px;
+    margin: 25px;
+}
+
+.faq-box {
+    flex: 1;
+}
+/*section 3 FAQs end*/
+
+
+
+/*section 4 Contact Us start*/
+
+.contact-container {    
+    background-image: url("./assets/Ad.png");
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+}
+
+form {
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-group {
+    margin: 20px;
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1x solid black;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    columns: black;
+    cursor: text;
+    transition: 0.2s;
+    font-size: large;
+}
+
+
+/*icon color set to blue*/
+.fa-solid {
+    color: rgb(6, 138, 219);
+}
+
+button {
+    margin-bottom: 25px;
+    padding: 10px 0;
+    background-color: transparent;
+    width: 100%;
+    border-radius: 50px;
+}
+
+button:hover {
+    transition-duration: 0.5s;
+    background-color: rgb(6, 138, 219);
+    color: white;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    left: -190px;
+    font-size: large;
+}
+/*section 4 Contact Us end*/
+
+
+
+/*section 5 footer start*/
+.f-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(6, 138, 219);
+    color: white;
+}
+
+.f-container .img {
+    background-image: url("./assets/logo-light-1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: static;
+    margin: 30px 25px;
+    height: 80px;
+    display: block;
+}
+
+.f-container p {
+    text-align: center;
+    padding-bottom: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+/*section 5 footer end*/
+
+
+
+@media (max-width: 1200px) {
+    .holding-container > div {
+        width: 100%;
+        height: 400px;
+}
+    .left-side{
+        display: none;
+}
+
+.contact-container {
+    background-image: none;
+    justify-content: center;
+}
+}   
+
+@media (max-width: 920px) {
+    .sm-text {
+        font-size: 14px;
+}
+
+.f-2 {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto 30px auto;
+}
+
+.flex, .sypf-container, .faq-container {
+    flex-wrap: wrap;  
+    justify-content: center;
+}
+
+.class {
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.sypf-box, .faq-box {
+    width: 100%;
+    max-width: 400px;
+    flex: auto;
+}
+
+header {
+    justify-content: center;
+}
+
+nav {
+    display: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
